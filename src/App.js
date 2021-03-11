@@ -7,8 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Nuevos cambios para la rama de archivosBorrados <code>src/App.js</code> and save to reload.
+          Agregamos un titulo con h1<code>src/App.js</code> and save to reload.
         </p>
+        <h1>a que hora se sube esta rama o branch</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
