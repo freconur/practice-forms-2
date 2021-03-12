@@ -2,7 +2,9 @@ import React from 'react' ;
 
 class BadgesForm extends  React.Component {
 	
-	state = {};
+	state = {
+		fisrtName: "fronted enginner"
+	};
 
 
 	//el handleChange es un atributo del input que lo usamos como funcion para poder usar los datos a nuestro conveniencia
@@ -29,10 +31,11 @@ class BadgesForm extends  React.Component {
 
 	// 	})
 	// };
-	handleSubmit = e => {
-		e.preventDefault();
-		console.log('form was submited');
-	 }
+		handleSubmit = e => {
+			e.preventDefault();
+			console.log('form was submited');
+			console.log(this.state)
+		}
     render() {
 			return (
 				<div>
@@ -43,6 +46,11 @@ class BadgesForm extends  React.Component {
 								onChange={this.handleChange}
 								type="text" 
 								name="fisrtName"
+								//le pasamos un props adicion VALUE, es el que va tener y va desplegar cada uno de los inputs, lo que debemos hacer es leer la informacion desde el estado
+
+								//para leer informacion dle estado se usa el "state", pero para escribirlo usamos "setState"
+								value={this.state.fisrtName}
+
 								/>
 								</div>
 							<div>
@@ -51,6 +59,7 @@ class BadgesForm extends  React.Component {
 								onChange={this.handleChange}
 								type="text" 
 								name="lastName"
+								value={this.state.lastName}
 								/>
 							</div>
 							<div>
@@ -59,6 +68,7 @@ class BadgesForm extends  React.Component {
 								onChange={this.handleChange}
 								type="email" 
 								name="email"
+								value={this.state.email}
 								/>
 							</div>
 						<button onclick={this.handleSubmit} className="btn btn-primary">Save
