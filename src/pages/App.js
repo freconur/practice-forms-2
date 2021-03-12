@@ -6,7 +6,13 @@ class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="Badge__container"><Badge /></div>
+                <div className="Badge__container">
+                    <Badge 
+                    firstName="cachito"
+										lastName="mondongito"
+										email="freconur@gmail.com"
+                    />
+                    </div>
                 <div className="BadgeForm__container"><BadgesForm /></div>
             </div>
         )

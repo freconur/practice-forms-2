@@ -4,10 +4,10 @@ class Badge extends React.Component {
     render() {
         return (
 					<div>
-						<h1>Franco <br /> Condori</h1>
-						<p>Fronted Enginner</p>
+						<h1>{this.props.firstName} <br /> {this.props.lastName}</h1>
+						<p>{this.props.jobs}</p>
 						<p>@freconur</p>
-						<p>freconur@gmail.com</p>
+						<p>{this.props.email}</p>
 					</div>
         )
     }
