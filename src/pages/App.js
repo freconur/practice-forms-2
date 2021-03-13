@@ -23,9 +23,9 @@ class App extends React.Component {
             <div className="container">
                 <div className="Badge__container">
                     <Badge 
-                    firstName={this.state.form.firstName } //|| Name
-										lastName={this.state.form.lastName } //|| Last Name
-										email={this.state.form.email } //|| email
+                    firstName={this.state.form.firstName || 'Name' }
+										lastName={this.state.form.lastName || 'Last Name'}
+										email={this.state.form.email || 'email'}
                     />
                     </div>
                 <div className="BadgeForm__container">
