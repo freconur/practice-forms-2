@@ -1,6 +1,13 @@
 import React from 'react' ;
 
 class BadgesForm extends  React.Component {
+	/* state={}
+
+	handleChange = e => {
+		this.setState({
+			[e.target.name]: e.target.value,
+		})
+	} */
     render() {
 			return (
 				<div>
@@ -9,19 +16,28 @@ class BadgesForm extends  React.Component {
 								<label>First Name</label> <br />
 								<input 
 								type="text" 
-								name="fisrtName"></input>
+								name="firstName"
+								onChange={this.props.onChange}
+								value={this.props.formValues.firstName}
+								/>
 								</div>
 							<div>
 								<label>Last Name</label><br />
 								<input 
 								type="text" 
-								name="lastName"></input>
+								name="lastName"
+								onChange={this.props.onChange}
+								value={this.props.formValues.lastName}
+								/>
 							</div>
 							<div>
 								<label>Email</label><br />
 								<input 
 								type="email" 
-								name="email"></input>
+								name="email"
+								onChange={this.props.onChange}
+								value={this.props.formValues.email}
+								/>
 							</div>
 						</form>
 				</div>
