@@ -1,0 +1,23 @@
+.BadgeNew__hero {
+    background-image: url('../../images/bike-hero.png');
+    width: 100% ;
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.BadgeNew__overlay {
+    position: absolute;
+    background:rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    z-index: 10;   
+}
+.BadgeNew__title{
+    color:white;
+    /* position: relative; */
+    z-index: 20;
+}
