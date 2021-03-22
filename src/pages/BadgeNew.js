@@ -18,7 +18,9 @@ class BadgeNew extends React.Component {
 											email="freconur@gmail.com"
 											/>
 											</div>
-									<div className="BadgeForm__container"><BadgesForm /></div>
+									<div className="BadgeForm__container">
+										<BadgesForm />
+									</div>
 							</div>
 					</div>
         )

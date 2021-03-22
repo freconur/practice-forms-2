@@ -1,0 +1,12 @@
+.Badges__container {
+    /* display: flex; */
+    max-width: 700px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.Badges__buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

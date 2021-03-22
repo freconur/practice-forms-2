@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import { findAllByTestId } from '@testing-library/dom';
-
+import './styles/Badges.css';
 
 class Badges extends React.Component {
 
-	status = {
+	state = {
 		data: [
       {
         id: '2de30c42-9deb-40fc-a41f-05e62b5939a7',
@@ -45,6 +45,31 @@ class Badges extends React.Component {
 			<div>
 				<Navbar />
 				<Hero />
+				
+					<div className="Badges__container">
+						<div className="Badges__buttons">
+							<a href="/badges/new" className="btn btn-primary">New Badge</a>
+						</div>
+						<div>
+							<div className="Badges__list">
+								<div className="Badgeslist__container">
+									<ul className="list-unstyled">
+										{this.state.data.map((badge) => {
+											return (
+												<li key={badge.id}> 
+													<p>
+														{badge.firstName} {badge.lastName} 
+													</p>
+												</li>
+											)
+										})}
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				
 			</div>
 		)
 	}
