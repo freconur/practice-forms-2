@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import { findAllByTestId } from '@testing-library/dom';
 import './styles/Badges.css';
+import { Link } from 'react-router-dom';
 
 class Badges extends React.Component {
 
@@ -48,21 +49,21 @@ class Badges extends React.Component {
 				
 					<div className="Badges__container">
 						<div className="Badges__buttons">
-							<a href="/badges/new" className="btn btn-primary">New Badge</a>
+							<Link to="/badges/new" className="btn btn-primary">New Badge</Link>
 						</div>
 						<div>
 							<div className="Badges__list">
 								<div className="Badgeslist__container">
 									<ul className="list-unstyled">
-										{this.state.data.map((badge) => {
-											return (
-												<li key={badge.id}> 
-													<p>
-														{badge.firstName} {badge.lastName} 
-													</p>
-												</li>
-											)
-										})}
+									 {this.state.data.map((badge) => {
+										return(
+											<li>
+												<p>
+													{badge.firstName} {badge.lastName}
+												</p>
+											</li>
+										)
+									 })}
 									</ul>
 
 								</div>
