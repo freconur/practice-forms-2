@@ -71,7 +71,7 @@ class BadgesForm extends  React.Component {
 								value={this.props.formValues.email}
 								/>
 							</div>
-						<button onclick={this.handleSubmit} className="btn btn-primary">Save
+						<button onClick={this.handleSubmit} className="btn btn-primary">Save
 						</button>
 						</form>
 				</div>

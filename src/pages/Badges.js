@@ -1,10 +1,9 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import { findAllByTestId } from '@testing-library/dom';
 import './styles/Badges.css';
 import { Link } from 'react-router-dom';
-
+import BadgesList from '../components/BadgesList'
 class Badges extends React.Component {
 
 	state = {
@@ -43,8 +42,7 @@ class Badges extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				<Navbar />
+			<React.Fragment>
 				<Hero />
 				
 					<div className="Badges__container">
@@ -54,24 +52,17 @@ class Badges extends React.Component {
 						<div>
 							<div className="Badges__list">
 								<div className="Badgeslist__container">
-									<ul className="list-unstyled">
-									 {this.state.data.map((badge) => {
-										return(
-											<li>
-												<p>
-													{badge.firstName} {badge.lastName}
-												</p>
-											</li>
-										)
-									 })}
-									</ul>
+									<BadgesList 
+									badges={this.state.data}
+									/>
+									
 
 								</div>
 							</div>
 						</div>
 					</div>
 				
-			</div>
+			</React.Fragment>
 		)
 	}
 }
