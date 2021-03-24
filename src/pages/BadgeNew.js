@@ -13,7 +13,7 @@ class BadgeNew extends React.Component {
 						<div className="container">
 									<div className="Badge__container">
 											<Badge 
-											firstName="cachito"
+											firstName={this.props.firstName || 'Nombre'}
 											lastName="mondongito"
 											email="freconur@gmail.com"
 											/>
