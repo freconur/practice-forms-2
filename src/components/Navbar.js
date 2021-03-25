@@ -4,11 +4,11 @@ import './styles/Navbar.css'
 class Navbar extends React.Component {
 	render(){
 		return (
-			<div>
+			<React.Fragment>
 				<div className="Navbar">
 				<img  className="Navbar__logo" src={Logo} />
 				</div>
-			</div>	
+			</React.Fragment>	
 		)
 	}
 }
