@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import { findAllByTestId } from '@testing-library/dom';
 import './styles/Badges.css';
-
+import Badgeslist from '../components/Badgeslist';
 class Badges extends React.Component {
 
 	state = {
@@ -43,7 +43,6 @@ class Badges extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar />
 				<Hero />
 				
 					<div className="Badges__container">
@@ -53,17 +52,9 @@ class Badges extends React.Component {
 						<div>
 							<div className="Badges__list">
 								<div className="Badgeslist__container">
-									<ul className="list-unstyled">
-										{this.state.data.map((badge) => {
-											return (
-												<li key={badge.id}> 
-													<p>
-														{badge.firstName} {badge.lastName} 
-													</p>
-												</li>
-											)
-										})}
-									</ul>
+									<Badgeslist 
+									badges={this.state.data}
+									/>
 
 								</div>
 							</div>
