@@ -12,7 +12,7 @@ class Home extends React.Component {
 						<div className="Button__container">
 							<Link to="/badges/new">
 								<p className="btn btn-primary">
-									cagala y te matyo cabron
+									UNETE
 								</p>	
 							</Link>
 						</div>
