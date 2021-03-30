@@ -1,4 +1,4 @@
-sssssssssssssssssssssssssssssssssssss.Home__container {
+.Home__container {
     height: calc(100vh - 50px);
     background-image: url(../../images/horizonte.jpg);
     position: relative;
@@ -8,7 +8,7 @@ sssssssssssssssssssssssssssssssssssss.Home__container {
     justify-content: center;
     display: flex;
     width: 100%;
-    z-index: 0;
+    /* z-index: 0; */
 }
 .Home__overlay {
     position: absolute;
@@ -21,10 +21,10 @@ sssssssssssssssssssssssssssssssssssss.Home__container {
     align-items: center;
     justify-content: center;
     display: flex;
-}s
+}
 .title-container {
-    z-index: 40;
     /* margin: auto; */
+    z-index: 20;
 }
 .Home__title {
     color: white;
