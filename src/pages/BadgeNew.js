@@ -4,7 +4,7 @@ import BadgesForm from '../components/BadgesForm';
 import Navbar from '../components/Navbar';
 import './styles/BadgeNew.css'
 import Hero from '../components/Hero'
-import api from './api';
+import api from '../api';
 class BadgeNew extends React.Component {
 
 	state = { form: {
