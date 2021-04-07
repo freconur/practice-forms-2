@@ -2,7 +2,7 @@ import React from 'react';
 import Gravatar from './Gravatar';
 class Badge extends React.Component {
     render() {
-        return (
+        return (  
 					<div>
 						<Gravatar 
 						className="Bage__images" 
