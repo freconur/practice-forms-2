@@ -1,9 +1,10 @@
 {
   "badges": [
-    
     {
       "id": "ff53b940-d5b3-4a66-ad78-af58a9323458",
-      "firstName": "Eudora",
+      "firstName": [
+        "carwancho"
+      ],
       "lastName": "Daugherty",
       "email": "Raina_Hettinger@yahoo.com",
       "jobTitle": "Global Metrics Technician",
@@ -12,9 +13,15 @@
     },
     {
       "id": "9c2c7b04-532f-4c13-abbd-bcf694d9fe11",
-      "firstName": "Leonie",
-      "lastName": "Towne",
-      "email": "Reyes.Senger@yahoo.com",
+      "firstName": [
+        "leonidas"
+      ],
+      "lastName": [
+        "licor"
+      ],
+      "email": [
+        "rabioles@gmail.com"
+      ],
       "jobTitle": "Customer Markets Coordinator",
       "twitter": "LeonieTowne65019-2735",
       "avatarUrl": "https://www.gravatar.com/avatar/2418114906f2bea38d7485340a7f0461?d=identicon"
@@ -65,8 +72,12 @@
       "id": "npaYZKI"
     },
     {
-      "firstName": "franco",
-      "lastName": "condori",
+      "firstName": [
+        "franzua"
+      ],
+      "lastName": [
+        "COndoro"
+      ],
       "email": "freconur@gmail.com",
       "jobsTitle": "fronted enginner",
       "twitter": "freconur",

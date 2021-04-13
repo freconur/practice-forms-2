@@ -21,10 +21,12 @@ class Badgeslist extends React.Component{
 					{this.props.badges.map((badge) => {
 						return(
 							<li key={badge.id}>
+							<Link to={`/badges/${badge.id}/edit`}>
 								<p>
 									{badge.firstName} {badge.lastName}
 								</p>
 								<Gravatar email={badge.email}/>
+							</Link>
 							</li>
 						);
 					})}
