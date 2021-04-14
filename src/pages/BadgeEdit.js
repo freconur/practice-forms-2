@@ -4,15 +4,13 @@ import BadgesForm from '../components/BadgesForm';
 import './styles/BadgeNew.css'
 import Hero from '../components/Hero'
 import api from '../api';
-class BadgeNew extends React.Component {
+class BadgeEdit extends React.Component {
 
-	state = { 
-		form: {
-			firstName:'',
-			lastName:'',
-			email:'',
-		}
-	}
+	state = { form: {
+		firstName:'',
+		lastName:'',
+		email:'',
+	}}
 
 		handleChange = e => {
 
@@ -24,19 +22,38 @@ class BadgeNew extends React.Component {
 			});
 		}
 
+		componentDidMount (){
+			this.fetchData()
+		}
+
+		fetchData =  async () => {
+			
+			const data = await api.badges.read(
+				this.props.match.params.badgeId
+			);
+
+			this.setState ({ loading: true, error: null })
+				try{
+					this.setState({ loading:false, form:data });
+				}catch(error) {
+					this.setState({ loading:false, error:error })
+				}
+		}
+
 		handleSubmit = async e => {
 			e.preventDefault()
 			this.setState({loading: true, error: null})
 			try {
-				await api.badges.create(this.state.form)
+				await api.badges.update(this.props.match.params.badgeId, this.state.form)
 				this.setState({loading: false })
+				this.props.history.push('/badges');
 			} catch (error){
 				this.setState({loading: false, error: error})
 			}
 		}
     render() {
-			return (
-				<React.Fragment>
+        return (
+					<React.Fragment>
 					<Hero />
 					<div className="container">
 						<div className="Badge__container">
@@ -55,7 +72,8 @@ class BadgeNew extends React.Component {
 						</div>
 						</div>
 				</React.Fragment>
-			)
+				);
     }
 }
-export default BadgeNew;
+
+export default BadgeEdit;
