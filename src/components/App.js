@@ -6,7 +6,7 @@ import NotFound from '../pages/NotFound';
 import Layout from './Layout';
 import Home from '../pages/Home';
 import BadgeEdit from '../pages/BadgeEdit';
-import BadgesDetails from '../pages/BadgesDetails'
+import BadgesDetails from '../pages/BadgesDetailsContainer'
 function  App() {
 	return (
 		<BrowserRouter>
