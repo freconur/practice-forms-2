@@ -2,6 +2,7 @@ import React from 'react';
 import Badge from '../components/Badge'
 import '../components/styles/Hero.css';
 import { Link } from 'react-router-dom';
+import Modal from '../components/Modal';
 
 function BadgeDetails (props) {
 
@@ -40,6 +41,7 @@ function BadgeDetails (props) {
 							<button className="btn btn-danger">
 							Delete
 							</button>
+							<Modal isOpen={true} > Hola, aqui debe de aparecer algun mensaje</Modal>
 						</div>
 					</div>
 				</div>
