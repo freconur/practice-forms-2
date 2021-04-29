@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from '../components/Badge'
 import '../components/styles/Hero.css';
 import { Link } from 'react-router-dom';
-
+import DeleteBadgeModal from '../components/DeleteBadgeModal';
 function BadgeDetails (props) {
 
 	const badge = props.badge
@@ -37,9 +37,11 @@ function BadgeDetails (props) {
 							</Link>
 						</div>
 						<div >
-							<button className="btn btn-danger">
+							<button onClick={props.onOpenModal} className="btn btn-danger">
 							Delete
 							</button>
+							<DeleteBadgeModal isOpen={props.modalIsOpen}  onClose={props.onCloseModal} onDeleteBadge={props.onDeleteBadge} />
+							
 						</div>
 					</div>
 				</div>
