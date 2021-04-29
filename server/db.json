@@ -1,33 +1,6 @@
 {
   "badges": [
     {
-      "id": "ff53b940-d5b3-4a66-ad78-af58a9323458",
-      "firstName": "yanely",
-      "lastName": "carcausto",
-      "email": "Raina_Hettinger@yahoo.com",
-      "jobTitle": "Global Metrics Technician",
-      "twitter": "EudoraDaugherty44214-4039",
-      "avatarUrl": "https://www.gravatar.com/avatar/e19db69107841cab64edd704fa177509?d=identicon"
-    },
-    {
-      "id": "9c2c7b04-532f-4c13-abbd-bcf694d9fe11",
-      "firstName": "Leonie",
-      "lastName": "Towne",
-      "email": "Reyes.Senger@yahoo.com",
-      "jobTitle": "Customer Markets Coordinator",
-      "twitter": "LeonieTowne65019-2735",
-      "avatarUrl": "https://www.gravatar.com/avatar/2418114906f2bea38d7485340a7f0461?d=identicon"
-    },
-    {
-      "id": "919f32ca-0d97-4639-8aca-8c4c888e6caf",
-      "firstName": "Winifred",
-      "lastName": "Thiel",
-      "email": "Euna.Bartoletti@hotmail.com",
-      "jobTitle": "Regional Metrics Administrator",
-      "twitter": "WinifredThiel14630",
-      "avatarUrl": "https://www.gravatar.com/avatar/b4f66246e7ff34e9a4a176fb58d6ecda?d=identicon"
-    },
-    {
       "id": "43a0a0df-9a0a-4a56-aa0c-2efc3a2b5897",
       "firstName": "Reyna",
       "lastName": "Gislason",
@@ -53,15 +26,6 @@
       "jobTitle": "Frontend Engineer @ Kickass Partners",
       "twitter": "sparragus",
       "id": "EYR2BVQ"
-    },
-    {
-      "firstName": "Carolynn",
-      "lastName": "Kaufman",
-      "email": "carolynn@example.com",
-      "avatarUrl": "https://www.gravatar.com/avatar/580a552f26ac5e3a0817c3ecc5b9d690?d=identicon",
-      "jobTitle": "Lawyer",
-      "twitter": "ckaufmanpr",
-      "id": "npaYZKI"
     },
     {
       "firstName": "franco",
@@ -90,12 +54,6 @@
       "jobsTitle": "Enginner",
       "twitter": "redragon",
       "id": "3CHoabA"
-    },
-    {
-      "firstName": "cachimbo",
-      "lastName": "limbo",
-      "email": "cachimbo@gmail.com",
-      "id": "uuc5y39"
     }
   ]
 }
